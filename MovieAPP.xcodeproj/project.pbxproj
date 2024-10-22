@@ -23,7 +23,6 @@
 		9FA8C48D2CBF192C005ED7E4 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8C48C2CBF192C005ED7E4 /* Input.swift */; };
 		9FA8C48F2CC15E5D005ED7E4 /* RegularJustColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8C48E2CC15E5D005ED7E4 /* RegularJustColor.swift */; };
 		9FA8C4912CC1B992005ED7E4 /* CustromLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8C4902CC1B992005ED7E4 /* CustromLabel.swift */; };
-		9FA8C4932CC30529005ED7E4 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8C4922CC30529005ED7E4 /* Register.swift */; };
 		9FA8C4952CC3D33D005ED7E4 /* Sign-up Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8C4942CC3D33D005ED7E4 /* Sign-up Screen.swift */; };
 		9FA8C4972CC3D352005ED7E4 /* Sign-in Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8C4962CC3D352005ED7E4 /* Sign-in Screen.swift */; };
 /* End PBXBuildFile section */
@@ -66,7 +65,6 @@
 		9FA8C48C2CBF192C005ED7E4 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
 		9FA8C48E2CC15E5D005ED7E4 /* RegularJustColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularJustColor.swift; sourceTree = "<group>"; };
 		9FA8C4902CC1B992005ED7E4 /* CustromLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustromLabel.swift; sourceTree = "<group>"; };
-		9FA8C4922CC30529005ED7E4 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		9FA8C4942CC3D33D005ED7E4 /* Sign-up Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign-up Screen.swift"; sourceTree = "<group>"; };
 		9FA8C4962CC3D352005ED7E4 /* Sign-in Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign-in Screen.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +94,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F2388362CC6AF2400134E50 /* WindowAssistant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WindowAssistant;
+			sourceTree = "<group>";
+		};
 		9FA8C43C2CBEEAFE005ED7E4 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +124,7 @@
 		9FA8C4472CBEEAFE005ED7E4 /* MovieAPP */ = {
 			isa = PBXGroup;
 			children = (
+				9F2388362CC6AF2400134E50 /* WindowAssistant */,
 				9FA8C4862CBEECD4005ED7E4 /* Scenes */,
 				9FA8C4792CBEEBDB005ED7E4 /* Сonstructor */,
 				9FA8C4482CBEEAFE005ED7E4 /* AppDelegate.swift */,
@@ -182,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				9FA8C48A2CBEEFF4005ED7E4 /* WelcomeScreen.swift */,
-				9FA8C4922CC30529005ED7E4 /* Register.swift */,
 				9FA8C4942CC3D33D005ED7E4 /* Sign-up Screen.swift */,
 				9FA8C4962CC3D352005ED7E4 /* Sign-in Screen.swift */,
 			);
@@ -334,7 +339,6 @@
 				9FA8C48F2CC15E5D005ED7E4 /* RegularJustColor.swift in Sources */,
 				9FA8C44D2CBEEAFE005ED7E4 /* ViewController.swift in Sources */,
 				9FA8C4972CC3D352005ED7E4 /* Sign-in Screen.swift in Sources */,
-				9FA8C4932CC30529005ED7E4 /* Register.swift in Sources */,
 				9FA8C4892CBEED2A005ED7E4 /* NavigationBar.swift in Sources */,
 				9FA8C4912CC1B992005ED7E4 /* CustromLabel.swift in Sources */,
 				9FA8C48D2CBF192C005ED7E4 /* Input.swift in Sources */,

@@ -11,7 +11,32 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let iconButton = IconButton(frame: CGRect(x: 0, y: 200, width: 40, height: 40))
+        let label1 = UILabel()
+        label1.text = "Label 1"
+
+        let label2 = UILabel()
+        label2.text = "Label 2"
+
+        let stackView = UIStackView(arrangedSubviews: [label1, label2])
+        stackView.axis = .vertical
+        stackView.distribution = .fillEqually
+        stackView.alignment = .center
+        stackView.spacing = 20
+
+        view.addSubview(stackView)
+
+        // Добавляем констрейнты для stack view
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            stackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20),
+            stackView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20),
+            stackView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 20)
+        ])
+        view.backgroundColor = .white
+        
+
+
+        /*let iconButton = IconButton(frame: CGRect(x: 0, y: 200, width: 40, height: 40))
         if let image = UIImage(systemName: "chevron.left") {
             iconButton.configure(withImage: image, tintColor: .white)
             iconButton.setImageSize(size: CGSize(width: 30, height: 30))
@@ -61,6 +86,6 @@ class ViewController: UIViewController {
         // Добавляем TabBarController как дочерний контроллер
         addChild(customTabBarController)
         view.addSubview(customTabBarController.view)
-        customTabBarController.didMove(toParent: self)
+        customTabBarController.didMove(toParent: self)*/
     }
 }

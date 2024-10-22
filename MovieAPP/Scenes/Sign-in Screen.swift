@@ -6,11 +6,10 @@
 //
 
 import Foundation
-
-import Foundation
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignInViewController: UIViewController {
+    let passwordTextField = PasswordTextField()
     override func viewDidLoad() {
         super.viewDidLoad()
         if let backgroundImage = UIImage(named: "BackgroundLogin") {
@@ -34,12 +33,16 @@ class SignUpViewController: UIViewController {
         }    
         view.addSubview(BackButton)
         
-
-        let Login = ClearableTextField(frame: CGRect(x: 24, y: 623, width: 345, height: 48))
-        view.addSubview(Login)
+        let LoginField = PasswordTextField(frame: CGRect(x: 24, y: 623, width: 345, height: 48))
+        LoginField.buttonType = .clear // или .clear, .eye
+        LoginField.placeholder = "Логин"
+        view.addSubview(LoginField)
         
-        let Password = ClearableTextField(frame: CGRect(x: 24, y: 680, width: 345, height: 48))
-        view.addSubview(Password)
+        
+        let passwordField = PasswordTextField(frame: CGRect(x: 24, y: 679, width: 345, height: 48))
+        passwordField.buttonType = .eye // или .clear, .eye
+        passwordField.placeholder = "Пароль"
+        view.addSubview(passwordField)
         
         let ButtonLogin = RegularJustButton(frame: CGRect(x: 24, y: 759, width: 345, height: 48))
         ButtonLogin.configure(withTitle: "Войти", backgroundColor: .darkFaded)
